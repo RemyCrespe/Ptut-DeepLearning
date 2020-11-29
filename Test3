@@ -1,0 +1,6 @@
+import matplotlib.pyplot as plt
+
+path = 'D:/ptut/Ptut-DeepLearning/207.jpg'
+img = plt.imread(path)
+plt.imshow(img)
+plt.show()
