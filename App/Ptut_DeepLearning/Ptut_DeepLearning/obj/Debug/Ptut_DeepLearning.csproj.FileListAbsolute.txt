@@ -1,0 +1,8 @@
+D:\ptut\Ptut-DeepLearning\App\Ptut_DeepLearning\Ptut_DeepLearning\bin\Debug\Ptut_DeepLearning.exe
+D:\ptut\Ptut-DeepLearning\App\Ptut_DeepLearning\Ptut_DeepLearning\bin\Debug\Ptut_DeepLearning.pdb
+D:\ptut\Ptut-DeepLearning\App\Ptut_DeepLearning\Ptut_DeepLearning\obj\Debug\Ptut_DeepLearning.csprojAssemblyReference.cache
+D:\ptut\Ptut-DeepLearning\App\Ptut_DeepLearning\Ptut_DeepLearning\obj\Debug\Ptut_DeepLearning.Ctrl_Ptut.resources
+D:\ptut\Ptut-DeepLearning\App\Ptut_DeepLearning\Ptut_DeepLearning\obj\Debug\Ptut_DeepLearning.Properties.Resources.resources
+D:\ptut\Ptut-DeepLearning\App\Ptut_DeepLearning\Ptut_DeepLearning\obj\Debug\Ptut_DeepLearning.csproj.GenerateResource.cache
+D:\ptut\Ptut-DeepLearning\App\Ptut_DeepLearning\Ptut_DeepLearning\obj\Debug\Ptut_DeepLearning.exe
+D:\ptut\Ptut-DeepLearning\App\Ptut_DeepLearning\Ptut_DeepLearning\obj\Debug\Ptut_DeepLearning.pdb
