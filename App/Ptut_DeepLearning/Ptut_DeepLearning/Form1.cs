@@ -57,6 +57,30 @@ namespace Ptut_DeepLearning
             }
         }
 
+        private void run_cmd_Entrainement(string cmd, string args1, string args2, string args3, string args4, string args5, string args6)
+        {
+            ProcessStartInfo start = new ProcessStartInfo();
+            start.FileName = "python";
+            start.Arguments = string.Format("{0} {1} {2} {3} {4} {5} {6}", cmd, args1, args2, args3, args4, args5, args6);
+            start.UseShellExecute = false;
+            start.RedirectStandardOutput = false;
+
+            using (Process process = Process.Start(start))
+            {
+                process.Exited += (sender, e) =>
+                {
+                    using (StreamReader reader = process.StandardOutput)
+                    {
+                        string result = reader.ReadToEnd();
+                        //Console.Write(result);
+
+                        MessageBox.Show(result);
+                    }
+                };
+                process.WaitForExit();
+            }
+        }
+
         private void Btn_Predict_Click(object sender, EventArgs e)
         {
             run_cmd("D:/ptut/Ptut-DeepLearning/Prediction.py", Path_c);
@@ -133,7 +157,7 @@ namespace Ptut_DeepLearning
 
             arg_l = BrainPath_c + ' ' + MaskPath_c + ' '+ Text_batch.Text + ' ' + Text_TrainStep.Text + ' ' + Text_ValStep.Text + ' ' + Text_Epoch.Text; 
             
-            run_cmd("D:/ptut/Ptut-DeepLearning/Entrainement.py", arg_l);
+            run_cmd_Entrainement("D:/ptut/Ptut-DeepLearning/Entrainement.py", BrainPath_c, MaskPath_c, Text_batch.Text, Text_TrainStep.Text, Text_ValStep.Text, Text_Epoch.Text);
             MessageBox.Show("Le modèle est entrainé");
         }
     }
